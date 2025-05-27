@@ -8,14 +8,14 @@ const testimonials = [
     role: "Giám đốc Marketing, Hà Nội",
     content:
       "Chất lượng sản phẩm tuyệt vời! Áo dài tôi mua ở đây được nhiều người khen ngợi. Sẽ tiếp tục ủng hộ DSA.",
-    avatar: "/placeholder.svg?height=80&width=80",
+    avatar: "/lan.jpg?holder.svg?height=80&width=80",
     rating: 5,
   },
   {
     name: "Trần Minh Hoàng",
     role: "Doanh nhân, TP.HCM",
     content: "Bộ suit ở đây rất đẹp và vừa vặn. Dịch vụ tư vấn nhiệt tình, giao hàng nhanh chóng.",
-    avatar: "/placeholder.svg?height=80&width=80",
+    avatar: "/hoang.jpg?height=80&width=80",
     rating: 5,
   },
   {
@@ -23,7 +23,7 @@ const testimonials = [
     role: "Blogger thời trang, Đà Nẵng",
     content:
       "DSA là nơi tôi tìm thấy những món đồ độc đáo nhất. Thiết kế hiện đại mà vẫn giữ được nét truyền thống.",
-    avatar: "/placeholder.svg?height=80&width=80",
+    avatar: "/mai.jpg?height=80&width=80",
     rating: 5,
   },
 ]

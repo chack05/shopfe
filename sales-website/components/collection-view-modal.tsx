@@ -18,7 +18,7 @@ const collectionProducts = {
       name: "Áo Dài Cưới Hoàng Gia Deluxe",
       price: 8500000,
       originalPrice: 10000000,
-      image: "/anhhoanggia?height=300&width=250",
+      image: "/anhhoanggia.jpg?height=300&width=250",
       rating: 4.9,
       reviews: 156,
       isNew: true,
@@ -48,7 +48,6 @@ const collectionProducts = {
       colors: ["Trắng", "Hồng", "Tím"],
       sizes: ["XS", "S", "M", "L", "XL"],
     },
-    // Add more products...
   ],
   2: [
     // Office Collection
@@ -56,16 +55,76 @@ const collectionProducts = {
       id: 201,
       name: "Bộ Suit Nữ Cao Cấp",
       price: 4200000,
-      image: "/placeholder.svg?height=300&width=250",
+      image: "/Sustainable.jpg?height=300&width=250",
       rating: 4.6,
       reviews: 78,
       isNew: true,
       colors: ["Đen", "Xám", "Navy"],
       sizes: ["S", "M", "L", "XL"],
     },
-    // Add more products...
+    {
+      id: 202,
+      name: "Áo Sơ Mi Công Sở Thanh Lịch",
+      price: 980000,
+      image: "/la333-1.jpg?height=300&width=250",
+      rating: 4.5,
+      reviews: 54,
+      colors: ["Trắng", "Xanh nhạt", "Be"],
+      sizes: ["S", "M", "L"],
+    },
   ],
-  // Add more collections...
+  3: [
+    // Party Collection
+    {
+      id: 301,
+      name: "Đầm Dạ Hội Kim Tuyến",
+      price: 5600000,
+      image: "/dahoi.jpg?height=300&width=250",
+      rating: 4.9,
+      reviews: 132,
+      isSale: true,
+      originalPrice: 6800000,
+      colors: ["Vàng đồng", "Bạc", "Đỏ đô"],
+      sizes: ["S", "M", "L"],
+    },
+    {
+      id: 302,
+      name: "Đầm Dạ Hội Trễ Vai",
+      price: 4900000,
+      image: "/damtrevai.jpg?height=300&width=250",
+      rating: 4.8,
+      reviews: 101,
+      isNew: true,
+      colors: ["Xanh rêu", "Tím", "Đen"],
+      sizes: ["S", "M", "L", "XL"],
+    },
+  ],
+  4: [
+    // Streetwear Collection
+    {
+      id: 401,
+      name: "Áo Hoodie Local Brand",
+      price: 950000,
+      image: "/aohosdi.jpg?height=300&width=250",
+      rating: 4.6,
+      reviews: 87,
+      isNew: true,
+      colors: ["Đen", "Trắng", "Be"],
+      sizes: ["S", "M", "L", "XL"],
+    },
+    {
+      id: 402,
+      name: "Quần Jogger Thể Thao",
+      price: 750000,
+      image: "/quan-dai-the-thao-nam-jogger-sg10-3.jpg?height=300&width=250",
+      rating: 4.4,
+      reviews: 65,
+      colors: ["Đen", "Xám"],
+      sizes: ["M", "L", "XL"],
+    },
+  ],
+
+
 }
 
 export default function CollectionViewModal({ collection, isOpen, onClose }: CollectionViewModalProps) {
