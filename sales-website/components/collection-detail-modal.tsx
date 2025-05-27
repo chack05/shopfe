@@ -26,7 +26,7 @@ export default function CollectionDetailModal({ collection, isOpen, onClose }: C
         {/* Header */}
         <div className="relative h-64 overflow-hidden rounded-t-2xl">
           <img
-            src={collection.image || "/placeholder.svg"}
+            src={collection.image || "/vay-cuoi.jpg"}
             alt={collection.name}
             className="w-full h-full object-cover"
           />

@@ -6,7 +6,7 @@ const features = [
   {
     icon: "👗",
     title: "Thiết Kế Độc Quyền",
-    description: "Những mẫu thiết kế độc đáo chỉ có tại VietFashion",
+    description: "Những mẫu thiết kế độc đáo chỉ có tại DSA",
   },
   {
     icon: "🚚",
@@ -76,7 +76,7 @@ export default function FeaturesSection() {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Những ưu điểm vượt trội giúp VietFashion trở thành lựa chọn hàng đầu của khách hàng
+            Những ưu điểm vượt trội giúp DSA trở thành lựa chọn hàng đầu của khách hàng
           </p>
         </div>
 

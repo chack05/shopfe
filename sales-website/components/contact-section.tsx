@@ -52,7 +52,7 @@ export default function ContactSection() {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Hãy để VietFashion đồng hành cùng bạn trong hành trình khám phá phong cách thời trang độc đáo
+            Hãy để DSA đồng hành cùng bạn trong hành trình khám phá phong cách thời trang độc đáo
           </p>
         </div>
 
@@ -64,7 +64,7 @@ export default function ContactSection() {
                 Kết Nối Với Chúng Tôi
               </h3>
               <p className="text-gray-300 text-lg leading-relaxed">
-                Đội ngũ tư vấn viên chuyên nghiệp của VietFashion luôn sẵn sàng hỗ trợ bạn tìm kiếm những sản phẩm thời
+                Đội ngũ tư vấn viên chuyên nghiệp của DSA luôn sẵn sàng hỗ trợ bạn tìm kiếm những sản phẩm thời
                 trang hoàn hảo nhất.
               </p>
             </div>
@@ -72,7 +72,7 @@ export default function ContactSection() {
             {/* Contact methods */}
             <div className="space-y-6">
               {[
-                { icon: "📧", label: "Email", value: "hello@vietfashion.vn" },
+                { icon: "📧", label: "Email", value: "hello@DSA.vn" },
                 { icon: "📞", label: "Hotline", value: "1900 1234 (miễn phí)" },
                 { icon: "📍", label: "Địa chỉ", value: "123 Đường Nguyễn Huệ, Quận 1, TP.HCM" },
                 { icon: "🕒", label: "Giờ làm việc", value: "8:00 - 22:00 (Thứ 2 - Chủ nhật)" },

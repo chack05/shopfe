@@ -16,7 +16,7 @@ const comparisonProducts = [
     image: "/placeholder.svg?height=300&width=250",
     rating: 4.9,
     reviews: 127,
-    brand: "VietFashion Premium",
+    brand: "DSA Premium",
     material: "Lụa tơ tằm cao cấp",
     origin: "Việt Nam",
     colors: ["Đỏ", "Vàng", "Hồng", "Trắng"],

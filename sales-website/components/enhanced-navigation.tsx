@@ -150,7 +150,7 @@ export default function EnhancedNavigation() {
             {/* Logo */}
             <div className="text-2xl font-bold text-white cursor-pointer group" onClick={() => scrollToSection("home")}>
               <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
-                VietFashion
+                DSA
               </span>
               <div className="w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-500"></div>
             </div>

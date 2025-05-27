@@ -39,7 +39,7 @@ export default function Footer() {
             <div>
               <h3 className="text-2xl font-bold text-white mb-4">
                 <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-                  VietFashion
+                  DSA
                 </span>
               </h3>
               <p className="text-gray-300 leading-relaxed">
@@ -141,7 +141,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3 text-gray-300">
                 <span>📧</span>
-                <span>hello@vietfashion.vn</span>
+                <span>hello@DSA.vn</span>
               </div>
             </div>
           </div>
@@ -150,7 +150,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="mt-12 pt-8 border-t border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-center md:text-left">© 2024 VietFashion. Tất cả quyền được bảo lưu.</p>
+            <p className="text-gray-400 text-center md:text-left">© 2024 DSA. Tất cả quyền được bảo lưu.</p>
 
             {/* Payment Methods */}
             <div className="flex items-center gap-4">

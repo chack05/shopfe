@@ -7,7 +7,7 @@ const testimonials = [
     name: "Nguyễn Thị Lan",
     role: "Giám đốc Marketing, Hà Nội",
     content:
-      "Chất lượng sản phẩm tuyệt vời! Áo dài tôi mua ở đây được nhiều người khen ngợi. Sẽ tiếp tục ủng hộ VietFashion.",
+      "Chất lượng sản phẩm tuyệt vời! Áo dài tôi mua ở đây được nhiều người khen ngợi. Sẽ tiếp tục ủng hộ DSA.",
     avatar: "/placeholder.svg?height=80&width=80",
     rating: 5,
   },
@@ -22,7 +22,7 @@ const testimonials = [
     name: "Lê Thị Mai",
     role: "Blogger thời trang, Đà Nẵng",
     content:
-      "VietFashion là nơi tôi tìm thấy những món đồ độc đáo nhất. Thiết kế hiện đại mà vẫn giữ được nét truyền thống.",
+      "DSA là nơi tôi tìm thấy những món đồ độc đáo nhất. Thiết kế hiện đại mà vẫn giữ được nét truyền thống.",
     avatar: "/placeholder.svg?height=80&width=80",
     rating: 5,
   },
@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
               Khách Hàng Nói Gì
             </span>
           </h2>
-          <p className="text-xl text-gray-300">Những phản hồi chân thực từ khách hàng yêu thích VietFashion</p>
+          <p className="text-xl text-gray-300">Những phản hồi chân thực từ khách hàng yêu thích DSA</p>
         </div>
 
         {/* Testimonials carousel */}

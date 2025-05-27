@@ -61,7 +61,7 @@ export default function PricingSection() {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Chọn gói thành viên phù hợp để tận hưởng những ưu đãi đặc biệt từ VietFashion
+            Chọn gói thành viên phù hợp để tận hưởng những ưu đãi đặc biệt từ DSA
           </p>
         </div>
 

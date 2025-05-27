@@ -527,7 +527,7 @@ export default function EnhancedProductModal() {
                     </div>
                     <div className="flex justify-between py-2 border-b border-gray-700">
                       <span className="text-gray-400">Thương hiệu:</span>
-                      <span className="text-white">VietFashion</span>
+                      <span className="text-white">DSA</span>
                     </div>
                   </div>
                   <div className="space-y-4">
