@@ -12,7 +12,7 @@ const styleGuides = [
     id: 1,
     title: "Phối đồ công sở chuyên nghiệp",
     description: "Hướng dẫn tạo phong cách công sở thanh lịch và chuyên nghiệp",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/docongso.jpg?height=300&width=400",
     tips: [
       "Chọn màu sắc trung tính như đen, xám, navy",
       "Kết hợp áo sơ mi với blazer hoặc vest",
@@ -23,16 +23,16 @@ const styleGuides = [
     difficulty: "Dễ",
     timeToStyle: "15 phút",
     products: [
-      { name: "Áo blazer navy", price: 1200000, image: "/placeholder.svg?height=150&width=150" },
-      { name: "Quần âu đen", price: 800000, image: "/placeholder.svg?height=150&width=150" },
-      { name: "Giày oxford", price: 1500000, image: "/placeholder.svg?height=150&width=150" },
+      { name: "Áo blazer navy", price: 1200000, image: "/paocongso.jpg?height=150&width=150" },
+      { name: "Quần âu đen", price: 800000, image: "/quanden.jpg?height=150&width=150" },
+      { name: "Giày oxford", price: 1500000, image: "/giaycaogotden.jpg?height=150&width=150" },
     ],
   },
   {
     id: 2,
     title: "Phong cách dạo phố năng động",
     description: "Tạo outfit thoải mái nhưng vẫn thời trang cho ngày cuối tuần",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/daopho.jpg?height=300&width=400",
     tips: [
       "Kết hợp jeans với áo thun hoặc áo hoodie",
       "Sneakers là lựa chọn hoàn hảo",
@@ -43,16 +43,16 @@ const styleGuides = [
     difficulty: "Dễ",
     timeToStyle: "10 phút",
     products: [
-      { name: "Áo hoodie", price: 600000, image: "/placeholder.svg?height=150&width=150" },
-      { name: "Quần jeans", price: 900000, image: "/placeholder.svg?height=150&width=150" },
-      { name: "Sneakers", price: 2200000, image: "/placeholder.svg?height=150&width=150" },
+      { name: "Áo hoodie", price: 600000, image: "/aohosdi.jpg?height=150&width=150" },
+      { name: "Quần jeans", price: 900000, image: "/quanjean.jpg?height=150&width=150" },
+      { name: "Sneakers", price: 2200000, image: "/giayh.jpg?height=150&width=150" },
     ],
   },
   {
     id: 3,
     title: "Dạ tiệc sang trọng",
     description: "Tỏa sáng trong những buổi tiệc tối và sự kiện đặc biệt",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/vaydahoi1.jpg?height=300&width=400",
     tips: [
       "Chọn váy dài hoặc jumpsuit thanh lịch",
       "Màu sắc tối hoặc metallic",
@@ -63,16 +63,16 @@ const styleGuides = [
     difficulty: "Khó",
     timeToStyle: "45 phút",
     products: [
-      { name: "Váy dạ hội", price: 6500000, image: "/placeholder.svg?height=150&width=150" },
-      { name: "Giày cao gót", price: 1800000, image: "/placeholder.svg?height=150&width=150" },
-      { name: "Clutch sang trọng", price: 2800000, image: "/placeholder.svg?height=150&width=150" },
+      { name: "Váy dạ hội", price: 6500000, image: "/vaydahoi1.jpg?height=150&width=150" },
+      { name: "Giày cao gót", price: 1800000, image: "/giaycaogotden1.jpg?height=150&width=150" },
+      { name: "Clutch sang trọng", price: 2800000, image: "/trangsuc.jpg?height=150&width=150" },
     ],
   },
   {
     id: 4,
     title: "Phong cách bohemian tự do",
     description: "Thể hiện cá tính tự do và phóng khoáng",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/a3566d07-phoi-do-nu-ca-tinh-12.jpg?height=300&width=400",
     tips: [
       "Váy maxi với họa tiết hoa hoặc ethnic",
       "Nhiều lớp phụ kiện như vòng cổ, vòng tay",
@@ -83,9 +83,9 @@ const styleGuides = [
     difficulty: "Trung bình",
     timeToStyle: "25 phút",
     products: [
-      { name: "Váy maxi bohemian", price: 1800000, image: "/placeholder.svg?height=150&width=150" },
-      { name: "Sandal da", price: 1200000, image: "/placeholder.svg?height=150&width=150" },
-      { name: "Túi fringe", price: 1500000, image: "/placeholder.svg?height=150&width=150" },
+      { name: "Váy maxi bohemian", price: 1800000, image: "/vaychan.jpg?height=150&width=150" },
+      { name: "Sandal da", price: 1200000, image: "/Sandal.jpg?height=150&width=150" },
+      { name: "Túi fringe", price: 1500000, image: "/fringe.jpg?height=150&width=150" },
     ],
   },
 ]

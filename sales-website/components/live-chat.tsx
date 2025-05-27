@@ -1,8 +1,6 @@
 "use client"
 
-import type React from "react"
-
-import { useState } from "react"
+import React, { useState } from "react"
 
 export default function LiveChat() {
   const [isOpen, setIsOpen] = useState(false)
@@ -11,13 +9,39 @@ export default function LiveChat() {
   ])
   const [inputMessage, setInputMessage] = useState("")
 
+  // Hàm trả lời bot dựa trên từ khóa
+  function getBotReply(userMessage: string): string {
+    const msg = userMessage.toLowerCase()
+
+    if (msg.includes("giá") || msg.includes("bao nhiêu")) {
+      return "Giá sản phẩm dao động từ 100k đến 1 triệu đồng tùy mẫu bạn nhé!"
+    }
+
+    if (msg.includes("ship") || msg.includes("giao hàng")) {
+      return "Chúng tôi có dịch vụ giao hàng tận nơi, thời gian từ 2-5 ngày làm việc."
+    }
+
+    if (msg.includes("đổi trả") || msg.includes("bảo hành")) {
+      return "Bạn có thể đổi trả trong vòng 7 ngày nếu sản phẩm lỗi, hoặc bảo hành theo chính sách của chúng tôi."
+    }
+
+    if (msg.includes("xin chào") || msg.includes("hello") || msg.includes("hi")) {
+      return "Xin chào bạn! Tôi có thể giúp gì cho bạn hôm nay?"
+    }
+
+    return "Cảm ơn bạn đã liên hệ! Tôi sẽ chuyển cho chuyên viên tư vấn ngay."
+  }
+
   const handleSendMessage = (e: React.FormEvent) => {
     e.preventDefault()
-    if (!inputMessage.trim()) return
+    const trimmedMessage = inputMessage.trim()
+    if (!trimmedMessage) return
+
+    const lastId = messages.length > 0 ? messages[messages.length - 1].id : 0
 
     const newMessage = {
-      id: messages.length + 1,
-      text: inputMessage,
+      id: lastId + 1,
+      text: trimmedMessage,
       isBot: false,
       time: new Date().toLocaleTimeString("vi-VN", { hour: "2-digit", minute: "2-digit" }),
     }
@@ -25,16 +49,17 @@ export default function LiveChat() {
     setMessages((prev) => [...prev, newMessage])
     setInputMessage("")
 
-    // Simulate bot response
+    // Bot trả lời sau 0.5s
+    const botResponse = {
+      id: lastId + 2,
+      text: getBotReply(trimmedMessage),
+      isBot: true,
+      time: new Date().toLocaleTimeString("vi-VN", { hour: "2-digit", minute: "2-digit" }),
+    }
+
     setTimeout(() => {
-      const botResponse = {
-        id: messages.length + 2,
-        text: "Cảm ơn bạn đã liên hệ! Tôi sẽ chuyển cho chuyên viên tư vấn ngay.",
-        isBot: true,
-        time: new Date().toLocaleTimeString("vi-VN", { hour: "2-digit", minute: "2-digit" }),
-      }
       setMessages((prev) => [...prev, botResponse])
-    }, 1000)
+    }, 500)
   }
 
   return (
@@ -50,28 +75,26 @@ export default function LiveChat() {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-24 left-8 w-80 h-96 bg-gray-900 rounded-2xl shadow-2xl z-40 animate-fade-in-up">
+        <div className="fixed bottom-24 left-8 w-80 h-96 bg-gray-900 rounded-2xl shadow-2xl z-40 animate-fade-in-up flex flex-col">
           {/* Header */}
-          <div className="p-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-t-2xl">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">👨‍💼</div>
-                <div>
-                  <h3 className="font-semibold">Tư vấn viên</h3>
-                  <p className="text-xs opacity-80">Đang online</p>
-                </div>
+          <div className="p-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-t-2xl flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">👨‍💼</div>
+              <div>
+                <h3 className="font-semibold">Tư vấn viên</h3>
+                <p className="text-xs opacity-80">Đang online</p>
               </div>
-              <button
-                onClick={() => setIsOpen(false)}
-                className="text-white/80 hover:text-white transition-colors duration-300"
-              >
-                ✕
-              </button>
             </div>
+            <button
+              onClick={() => setIsOpen(false)}
+              className="text-white/80 hover:text-white transition-colors duration-300"
+            >
+              ✕
+            </button>
           </div>
 
           {/* Messages */}
-          <div className="flex-1 p-4 h-64 overflow-y-auto space-y-3">
+          <div className="flex-1 p-4 overflow-y-auto space-y-3">
             {messages.map((message) => (
               <div key={message.id} className={`flex ${message.isBot ? "justify-start" : "justify-end"}`}>
                 <div

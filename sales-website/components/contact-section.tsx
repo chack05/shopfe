@@ -72,9 +72,9 @@ export default function ContactSection() {
             {/* Contact methods */}
             <div className="space-y-6">
               {[
-                { icon: "📧", label: "Email", value: "hello@DSA.vn" },
-                { icon: "📞", label: "Hotline", value: "1900 1234 (miễn phí)" },
-                { icon: "📍", label: "Địa chỉ", value: "123 Đường Nguyễn Huệ, Quận 1, TP.HCM" },
+                { icon: "📧", label: "Email", value: "lehson2005@gmail.com" },
+                { icon: "📞", label: "Hotline", value: "1900 1010" },
+                { icon: "📍", label: "Địa chỉ", value: "99 Đường Đời, Quận 1, TP.HCM" },
                 { icon: "🕒", label: "Giờ làm việc", value: "8:00 - 22:00 (Thứ 2 - Chủ nhật)" },
               ].map((item, index) => (
                 <div

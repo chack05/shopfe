@@ -7,7 +7,7 @@ const fashionTrends = [
     id: 1,
     title: "Minimalist Chic 2024",
     description: "Phong cách tối giản với những đường nét tinh tế và màu sắc trung tính",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/toigian.jpg?height=400&width=600",
     popularity: 95,
     growth: "+15%",
     category: "minimalist",
@@ -21,7 +21,7 @@ const fashionTrends = [
     id: 2,
     title: "Y2K Revival",
     description: "Sự trở lại của phong cách những năm 2000 với màu sắc neon và chất liệu metallic",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Y2K.jpg?height=400&width=600",
     popularity: 88,
     growth: "+25%",
     category: "retro",
@@ -35,7 +35,7 @@ const fashionTrends = [
     id: 3,
     title: "Sustainable Fashion",
     description: "Thời trang bền vững với chất liệu thân thiện môi trường",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Sustainable.jpg?height=400&width=600",
     popularity: 92,
     growth: "+30%",
     category: "sustainable",
@@ -49,7 +49,7 @@ const fashionTrends = [
     id: 4,
     title: "Cottagecore Aesthetic",
     description: "Phong cách đồng quê lãng mạn với họa tiết hoa và chất liệu tự nhiên",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Cottagecore.jpg?height=400&width=600",
     popularity: 76,
     growth: "+12%",
     category: "romantic",
@@ -63,7 +63,7 @@ const fashionTrends = [
     id: 5,
     title: "Tech Wear",
     description: "Thời trang công nghệ với chất liệu hiện đại và thiết kế futuristic",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Tech.jpg?height=400&width=600",
     popularity: 84,
     growth: "+20%",
     category: "futuristic",
@@ -77,7 +77,7 @@ const fashionTrends = [
     id: 6,
     title: "Maximalist Expression",
     description: "Phong cách tối đa với màu sắc rực rỡ và họa tiết phức tạp",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/sacso.jpg?height=400&width=600",
     popularity: 71,
     growth: "+8%",
     category: "maximalist",
@@ -91,7 +91,7 @@ const fashionTrends = [
     id: 7,
     title: "Gender Neutral",
     description: "Thời trang không giới tính với thiết kế unisex hiện đại",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/hiendaiunisex.jpg?height=400&width=600",
     popularity: 89,
     growth: "+18%",
     category: "unisex",
@@ -105,7 +105,7 @@ const fashionTrends = [
     id: 8,
     title: "Neo-Gothic",
     description: "Phong cách gothic hiện đại với màu đen và chi tiết kim loại",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/kimloai.jpg?height=400&width=600",
     popularity: 67,
     growth: "+5%",
     category: "gothic",
@@ -448,7 +448,7 @@ export default function FashionTrends() {
               <div>
                 <div className="relative rounded-2xl overflow-hidden mb-6">
                   <img
-                    src={selectedTrend.image || "/placeholder.svg"}
+                    src={selectedTrend.image || "/vaydai.jpg"}
                     alt={selectedTrend.title}
                     className="w-full h-64 object-cover"
                   />

@@ -150,7 +150,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="mt-12 pt-8 border-t border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-center md:text-left">© 2024 DSA. Tất cả quyền được bảo lưu.</p>
+            <p className="text-gray-400 text-center md:text-left">© 2025 DSA. Tất cả quyền được bảo lưu.</p>
 
             {/* Payment Methods */}
             <div className="flex items-center gap-4">

@@ -11,21 +11,21 @@ const relatedProducts = [
     id: 9,
     name: "Áo Dài Truyền Thống",
     price: 3200000,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/tryenthong.jpg?height=200&width=200",
     rating: 4.8,
   },
   {
     id: 10,
     name: "Giày Cao Gót Sang Trọng",
     price: 1800000,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/caogot.jpg?height=200&width=200",
     rating: 4.6,
   },
   {
     id: 11,
     name: "Túi Xách Da Thật",
     price: 2500000,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/tuisach.jpg?height=200&width=200",
     rating: 4.9,
   },
 ]
@@ -37,7 +37,7 @@ const customerReviews = [
     rating: 5,
     comment: "Sản phẩm rất đẹp và chất lượng tốt. Tôi rất hài lòng với việc mua hàng này.",
     date: "15/12/2024",
-    avatar: "/placeholder.svg?height=40&width=40",
+    avatar: "/lan.jpg?height=40&width=40",
     verified: true,
   },
   {
@@ -46,7 +46,7 @@ const customerReviews = [
     rating: 4,
     comment: "Chất lượng ổn, giao hàng nhanh. Sẽ ủng hộ shop tiếp.",
     date: "12/12/2024",
-    avatar: "/placeholder.svg?height=40&width=40",
+    avatar: "/hoang.jpg?height=40&width=40",
     verified: true,
   },
   {
@@ -55,7 +55,7 @@ const customerReviews = [
     rating: 5,
     comment: "Thiết kế đẹp, form dáng chuẩn. Rất đáng tiền!",
     date: "10/12/2024",
-    avatar: "/placeholder.svg?height=40&width=40",
+    avatar: "/mai.jpg?height=40&width=40",
     verified: false,
   },
 ]

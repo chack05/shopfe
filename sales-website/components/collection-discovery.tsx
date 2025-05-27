@@ -16,8 +16,6 @@ const collections = [
     featured: true,
     colors: ["#ff6b9d", "#ffd93d", "#6bcf7f"],
     tags: ["Áo dài", "Cưới hỏi", "Sang trọng"],
-     className:["w-24 h-24 object-cover"],
-    
   },
   {
     id: 2,
@@ -29,8 +27,6 @@ const collections = [
     featured: false,
     colors: ["#4a90e2", "#7b68ee", "#50c878"],
     tags: ["Suit", "Công sở", "Chuyên nghiệp"],
-     className:["w-24 h-24 object-cover"],
-
   },
   {
     id: 3,
@@ -58,7 +54,7 @@ const collections = [
     id: 5,
     name: "Thể Thao Năng Động",
     description: "Trang phục thể thao hiện đại và thoải mái",
-    image: "/aothethao.jpg?height=400&width=600",
+    image: "/aothethao.jpg?height=100&width=600",
     itemCount: 28,
     category: "sport",
     featured: false,
@@ -69,7 +65,7 @@ const collections = [
     id: 6,
     name: "Thu Đông Ấm Áp",
     description: "Bộ sưu tập ấm áp cho mùa thu đông",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/thudong.jpg?height=400&width=600",
     itemCount: 31,
     category: "winter",
     featured: true,
@@ -83,28 +79,28 @@ const trendingStyles = [
     id: 1,
     name: "Minimalist Chic",
     description: "Phong cách tối giản nhưng tinh tế",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/toigian.jpg?height=300&width=300",
     popularity: 95,
   },
   {
     id: 2,
     name: "Vintage Romance",
     description: "Nét cổ điển kết hợp hiện đại",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/codien.jpg?height=300&width=300",
     popularity: 88,
   },
   {
     id: 3,
     name: "Urban Street",
     description: "Phong cách đường phố năng động",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/dungpho.jpg?height=300&width=300",
     popularity: 92,
   },
   {
     id: 4,
     name: "Bohemian Dream",
     description: "Tự do và phóng khoáng",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/phongkhoan.jpg?height=300&width=300",
     popularity: 85,
   },
 ]
@@ -168,7 +164,7 @@ export default function CollectionDiscovery() {
         {/* Floating elements */}
         <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-full blur-3xl animate-float"></div>
         <div
-          className="absolute bottom-20 right-20 w-48 h-48 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-full blur-3xl animate-float"
+          className="absolute bottom-20 right-20 w-48 h-72 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-full blur-3xl animate-float"
           style={{ animationDelay: "2s" }}
         ></div>
 
@@ -235,7 +231,7 @@ export default function CollectionDiscovery() {
                     <div key={collection.id} className="w-full flex-shrink-0 relative">
                       <div className="relative h-[500px] bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl overflow-hidden group/slide">
                         <img
-                          src={collection.image || "/placeholder.svg"}
+                          src={collection.image || "/codien.jpg"}
                           alt={collection.name}
                           className="w-full h-full object-cover transition-transform duration-1000 group-hover/slide:scale-110"
                         />
@@ -404,7 +400,7 @@ export default function CollectionDiscovery() {
                     }`}
                   >
                     <img
-                      src={collection.image || "/placeholder.svg"}
+                      src={collection.image || "/codien.jpg"}
                       alt={collection.name}
                       className="w-full h-full object-cover"
                     />
@@ -429,12 +425,13 @@ export default function CollectionDiscovery() {
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 {/* Collection image */}
-                <div className="relative h-64 overflow-hidden">
-                  <img
-                    src={collection.image || "/placeholder.svg"}
-                    alt={collection.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
+               <div className="relative aspect-[4/5] overflow-hidden rounded-lg shadow-md">
+<img
+  src={collection.image || "/placeholder.svg"}
+  alt={collection.name}
+  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+/>
+
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
 
                   {/* Hover overlay */}
@@ -511,7 +508,8 @@ export default function CollectionDiscovery() {
                   className="group relative bg-gray-800/50 rounded-xl overflow-hidden hover:bg-gray-700/50 transition-all duration-500 hover:scale-105 animate-fade-in-up"
                   style={{ animationDelay: `${index * 150}ms` }}
                 >
-                  <div className="relative h-48 overflow-hidden">
+                  <div className="relative aspect-[4/5] overflow-hidden">
+
                     <img
                       src={style.image || "/placeholder.svg"}
                       alt={style.name}
