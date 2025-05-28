@@ -1,5 +1,5 @@
 "use client"
-
+// Khám phá bộ sưu tập.
 import type React from "react"
 
 import { useState, useEffect } from "react"

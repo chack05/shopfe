@@ -1,5 +1,5 @@
 "use client"
-
+// thẻ thành viên cho khách hàng
 import { useState } from "react"
 
 const plans = [

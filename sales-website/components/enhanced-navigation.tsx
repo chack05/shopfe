@@ -1,5 +1,5 @@
 "use client"
-
+// trang navbar
 import { useState, useEffect } from "react"
 import { useCart } from "@/contexts/cart-context"
 import { useProduct } from "@/contexts/product-context"

@@ -1,5 +1,5 @@
 "use client"
-
+// chat box
 import React, { useState, useEffect, useRef } from "react"
 
 // Định nghĩa kiểu cho một tin nhắn

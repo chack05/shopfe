@@ -1,5 +1,5 @@
 "use client"
-
+// trang 2 đầu
 import { useState } from "react"
 import { useProduct } from "@/contexts/product-context"
 import { useCart } from "@/contexts/cart-context"

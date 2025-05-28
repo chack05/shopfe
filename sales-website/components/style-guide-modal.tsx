@@ -1,5 +1,5 @@
 "use client"
-
+// phối đồ 3 món
 import { useState, useEffect } from "react"
 
 interface StyleGuideModalProps {
@@ -23,7 +23,7 @@ const styleGuides = [
     difficulty: "Dễ",
     timeToStyle: "15 phút",
     products: [
-      { name: "Áo blazer navy", price: 1200000, image: "/paocongso.jpg?height=150&width=150" },
+      { name: "Áo blazer navy", price: 1200000, image: "/aocongso.jpg?height=150&width=150" },
       { name: "Quần âu đen", price: 800000, image: "/quanden.jpg?height=150&width=150" },
       { name: "Giày oxford", price: 1500000, image: "/giaycaogotden.jpg?height=150&width=150" },
     ],

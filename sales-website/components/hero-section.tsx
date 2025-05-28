@@ -1,5 +1,5 @@
 "use client"
-
+// màn hình mới vào
 import { useState, useEffect } from "react"
 import Link from 'next/link'; // Import component Link từ Next.js
 

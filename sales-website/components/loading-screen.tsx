@@ -1,5 +1,5 @@
 "use client"
-
+//loading mới vào đầu
 export default function LoadingScreen() {
   return (
     <div className="fixed inset-0 bg-black flex items-center justify-center z-50">

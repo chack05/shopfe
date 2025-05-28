@@ -1,5 +1,5 @@
 "use client"
-
+// pop hiện lên như quảng cáo
 import type React from "react"
 
 import { useState, useEffect } from "react"

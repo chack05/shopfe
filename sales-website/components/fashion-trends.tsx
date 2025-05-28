@@ -1,5 +1,5 @@
 "use client"
-
+// xu huong thời trang
 import { useState, useEffect, useRef } from "react"
 
 const fashionTrends = [

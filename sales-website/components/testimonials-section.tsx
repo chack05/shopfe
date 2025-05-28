@@ -1,5 +1,5 @@
 "use client"
-
+// bình luận khách hàng 
 import { useState, useEffect } from "react"
 
 const testimonials = [

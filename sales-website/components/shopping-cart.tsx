@@ -1,5 +1,5 @@
 "use client"
-
+// giỏ hàng
 import { useCart } from "@/contexts/cart-context"
 
 export default function ShoppingCart() {
