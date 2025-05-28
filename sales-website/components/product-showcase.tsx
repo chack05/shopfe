@@ -1,5 +1,5 @@
 "use client"
-// bộ sưu tập thời trang
+// trang khi nhấn vaod nó hiện thị ra 2 sản phẩm
 import { useState, useEffect } from "react"
 import { useCart } from "@/contexts/cart-context"
 import { useProduct } from "@/contexts/product-context"
@@ -13,7 +13,7 @@ const products = [
     price: 4500000,
     originalPrice: 5500000,
     image: "/anhhoanggia.jpg?height=400&width=300",
-    images: ["/anhhoanggia.jpg?height=400&width=300", "/aocuoihoanggia1.jpg?height=400&width=300"],
+    images: ["/anhhoanggia.jpg?height=400&width=300", "/aocuoihoanggia1.jpg?height=400&width=300"], //sản phẩm
     category: "ao-dai",
     sizes: ["S", "M", "L", "XL"],
     colors: ["Đỏ", "Vàng", "Hồng", "Trắng"],

@@ -6,7 +6,7 @@ export default function AdvancedEffects() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [scrollY, setScrollY] = useState(0)
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const animationRef = useRef<number>()
+  const animationRef = useRef<number>(null)
 
   // Mouse tracking
   useEffect(() => {

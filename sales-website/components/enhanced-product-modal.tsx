@@ -11,7 +11,7 @@ const relatedProducts = [
     id: 9,
     name: "Áo Dài Truyền Thống",
     price: 3200000,
-    image: "/tryenthong.jpg?height=200&width=200",
+    image: "/truyenthong.jpg?height=200&width=200",
     rating: 4.8,
   },
   {
@@ -167,7 +167,7 @@ export default function EnhancedProductModal() {
             <div className="relative group">
               <div
                 className="relative overflow-hidden rounded-xl bg-gray-800 cursor-zoom-in"
-                onMouseMove={handleImageZoom}
+               // onMouseMove={handleImageZoom}
                 onMouseEnter={() => setIsZoomed(true)}
                 onMouseLeave={() => setIsZoomed(false)}
                 onMouseDown={handle360Drag}
