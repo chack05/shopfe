@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Link from 'next/link'; // Import component Link từ Next.js
 
 export default function HeroSection() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
@@ -62,18 +63,21 @@ export default function HeroSection() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in-up">
+          {/* Nút "Mua Ngay" */}
           <button className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg">
             <span className="relative z-10">Mua Ngay</span>
             <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </button>
 
-          <button className="group px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-full backdrop-blur-sm transition-all duration-300 hover:border-purple-400 hover:bg-white/10 hover:scale-105">
-            <span className="flex items-center gap-2">
-              Xem Bộ Sưu Tập
-              <div className="w-0 h-0 border-l-4 border-l-white border-y-2 border-y-transparent group-hover:animate-pulse"></div>
-            </span> 
-            
-          </button>
+          {/* Nút "Xem Bộ Sưu Tập" - Đã thêm Link Next.js */}
+          <Link href="/collections" passHref> {/* Thay đổi '/collections' nếu đường dẫn trang của bạn khác */}
+            <button className="group px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-full backdrop-blur-sm transition-all duration-300 hover:border-purple-400 hover:bg-white/10 hover:scale-105">
+              <span className="flex items-center gap-2">
+                Xem Bộ Sưu Tập
+                <div className="w-0 h-0 border-l-4 border-l-white border-y-2 border-y-transparent group-hover:animate-pulse"></div>
+              </span>
+            </button>
+          </Link>
         </div>
 
         {/* Scroll indicator */}
