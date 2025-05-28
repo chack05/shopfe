@@ -71,7 +71,8 @@ export default function HeroSection() {
             <span className="flex items-center gap-2">
               Xem Bộ Sưu Tập
               <div className="w-0 h-0 border-l-4 border-l-white border-y-2 border-y-transparent group-hover:animate-pulse"></div>
-            </span>
+            </span> 
+            
           </button>
         </div>
 
